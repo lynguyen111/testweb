@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sinh viên</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px;
+            color: #333;
+        }
+
+        /* Thanh công cụ ở trên cùng */
+        .toolbar {
+            display: flex;
+            justify-content: space-between;
+            /* Đẩy 2 phần tử ra 2 góc */
+            margin-bottom: 20px;
+        }
+
+        .toolbar-left {
+            display: flex;
+            gap: 10px;
+            /* Khoảng cách giữa select và nút Xem */
+        }
+
+        .toolbar select {
+            padding: 6px;
+            border: 1px solid #ccc;
+            width: 250px;
+            color: #555;
+            outline: none;
+        }
+
+        .btn {
+            background-color: #337ab7;
+            color: white;
+            border: none;
+            padding: 6px 15px;
+            border-radius: 3px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #286090;
+        }
+
+        /* CSS cho bảng dữ liệu */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            /* Xóa khoảng trắng giữa các ô */
+            font-size: 13px;
+        }
+
+        th {
+            text-align: left;
+            padding: 12px 10px;
+            border-bottom: 1px solid #ddd;
+            font-weight: bold;
+            color: #333;
+        }
+
+        td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #eee;
+            /* Đường gạch chân nhạt giữa các hàng */
+        }
+
+        /* Đổi màu nền mờ cho các hàng chẵn để dễ nhìn giống hình */
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        /* Cột hành động sửa/xóa */
+        .actions {
+            color: #337ab7;
+            /* Màu xanh biển */
+            font-size: 15px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .actions span {
+            margin: 0 10px;
+        }
+
+        .actions span:hover {
+            color: #286090;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="toolbar">
+        <div class="toolbar-left">
+            <select>
+                <option>-- Chọn khoa --</option>
+                <option>Khoa Toán</option>
+                <option>Khoa Hóa</option>
+                <option>Khoa Lý</option>
+                <option>Khoa Công nghệ thông tin</option>
+            </select>
+            <button class="btn">Xem</button>
+        </div>
+        <button class="btn">Thêm mới</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th width="15%">MSV</th>
+                <th width="25%">Họ và tên</th>
+                <th width="15%">Giới tính</th>
+                <th width="30%">Khoa</th>
+                <th width="15%"></th>
+            </tr>
+        </thead>
+
+
+</body>
+
+</html>
