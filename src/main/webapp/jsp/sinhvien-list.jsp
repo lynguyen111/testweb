@@ -117,7 +117,10 @@
                 <button type="submit" class="btn">Xem</button>
             </form>
         </div>
-        <a href="${pageContext.request.contextPath}/sinhvien/form" class="btn">Thêm mới</a>
+        <div>
+            <a href="${pageContext.request.contextPath}/sinhvien/form" class="btn">Thêm mới</a>
+            <a href="${pageContext.request.contextPath}/logout" class="btn" style="background-color: #d9534f; margin-left: 10px;">Đăng xuất</a>
+        </div>
     </div>
 
     <table>
